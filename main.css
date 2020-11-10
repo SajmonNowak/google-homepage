@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+nav {
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    color: rgba(0,0,0,0.87);
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail image menu sign-in";
+    text-decoration: none;
+    width:100vw;
+    padding-left: 20px;
+    padding-top:5px;
+    
+}
+
+nav a {
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+
+nav a:hover {
+
+        opacity: .85;
+        text-decoration: underline;
+        cursor: pointer;
+
+}
+
+#about{
+ grid-area: about;
+}
+
+#store {
+ grid-area: store;
+}
+
+#gmail {
+    grid-area: gmail;
+    padding-right: 20px;
+}
+
+#image {
+    grid-area: image;
+}
+
+#menu {
+    grid-area: menu;
+    font-size: 18px;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    align-self: center;;
+    border: none;
+    background-color:rgb(67, 135, 253);
+    color: white;
+    font-weight: bold;
+    height: 28px;
+    width:70;
+    
+}
+
+
+
+body {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container {
+    margin-top: 30px;
+    margin-bottom: 40px;;
+}
+
+#btn1 {
+    margin-right: 5px;
+}
+
+#btn2 {
+    margin-left: 5px;
+}
+
+.button {
+   background-color:#f2f2f2;
+   border: none;
+   color: #5f6368;
+   border-radius: 4px;
+   line-height: 27px;
+   font-size: 14px;
+   padding: 0 16px;
+   min-width: 54px;
+   height: 36px;
+}
+
+.button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#searchbar-container {
+    position: relative;
+width:600px;
+height: 44px;
+border-color:hsl(220, 10%, 89%);
+border:1px solid hsl(220, 10%, 89%) ;
+box-shadow: none;
+border-radius: 24px;
+outline: none;
+margin-top:20px;
+z-index: 300;
+
+}
+
+#searchbar-container:hover {
+   
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+        border-color: rgba(223,225,229,0);
+    
+}
+
+.search-input {
+    position: absolute;
+    border: none;
+    outline: none;
+    display:flex;
+    justify-content: flex-start;
+    width:100%;
+    height: 100%;
+    padding-left: 50px;
+    background-color: transparent ;
+
+}
+
+.fa-search{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+    color: grey;
+}
+
+.icon-container {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 50px;
+   
+}
+
+.Mikro-container {
+    
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+
+.Mikro {
+    width:15px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 99999999;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width:100%;
+    padding-left: 20px;
+}
+#footer {
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+#footer > div > a {
+    text-decoration: none;
+    color:#5f6368;
+    font-size: 14px;
+}
+
+.footer-items-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;;
+    width:100%;
+
+}
+
+.footer-items-left > a {
+    padding : 0 10px;
+}
+
+.footer-items-right  {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+}
+
+
+.footer-items-right > a {
+    padding: 0 10px;
+}
+
+#language-bar {
+    position: relative;
+    display: flex;
+    width:100%;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    color:#5f6368;
+    font-size: 14px;
+}
